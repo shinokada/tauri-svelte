@@ -10,6 +10,12 @@
 - ESLint
 - Prettier
 
+## Newly installed
+
+- Tailwind CSS
+- Flowbite
+- Flowbite-Svelte
+
 ## Dev instructions
 
 ### Get started
@@ -20,19 +26,21 @@
 4. Run `npm install`
 
 ### Commands
+
 - `npm run dev`: Start app in dev mode
 - `npm run build`: Build
 - `npm run lint`: Lint
 - `npm run format`: Format
 
 ### Release new version
+
 1. Update `CHANGELOG.md`
 2. Bump the version number in `src-tauri/Cargo.toml`
 3. Run `npm run check` to update `Cargo.lock`
 4. Create a git tag in the format `v#.#.#`
 5. Add release notes to the generated GitHub release and publish it
 
-```
+```sh
 git clone git@github.com:probablykasper/tauri-svelte-template.git
 cd tauri-svelte-template
 pnpm i
@@ -54,4 +62,26 @@ pnpm i
 pnpm i -D flowbite
 // see in a browser
 pnpm run dev:web
+```
+
+## Update tailwind.config.cjs
+
+```cjs
+const config = {
+  content: [
+    "./src/**/*.{html,js,svelte,ts}",
+    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
+  ],
+
+  theme: {
+    extend: {},
+  },
+
+  plugins: [
+    require('flowbite/plugin')
+  ],
+  darkMode: 'class',
+};
+
+module.exports = config;
 ```
