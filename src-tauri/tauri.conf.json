@@ -1,6 +1,6 @@
 {
   "package": {
-    "productName": "Tauri Template"
+    "productName": "Tauri-Svelte-Todo"
   },
   "build": {
     "distDir": "../build",
