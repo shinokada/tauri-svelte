@@ -1,15 +1,15 @@
 {
   "name": "tauri-svelte",
-	"version": "0.1.0",
-	"description": "Tauri, Svelte, TailwindCSS",
-	"author": {
-		"name": "Shinichi Okada",
-		"email": "connect@codewithshin.com",
-		"url": "https://blog.codewithshin.com"
-	},
-	"bugs": "https://github.com/shinokada/tauri-svelte/issues",
-	"homepage": "https://github.com/shinokada/tauri-svelte",
-	"license": "MIT",
+  "version": "0.1.1",
+  "description": "Tauri, Svelte, TailwindCSS",
+  "author": {
+    "name": "Shinichi Okada",
+    "email": "connect@codewithshin.com",
+    "url": "https://blog.codewithshin.com"
+  },
+  "bugs": "https://github.com/shinokada/tauri-svelte/issues",
+  "homepage": "https://github.com/shinokada/tauri-svelte",
+  "license": "MIT",
   "scripts": {
     "tauri": "tauri",
     "dev": "tauri dev",
@@ -50,12 +50,12 @@
     "singleQuote": true
   },
   "keywords": [
-		"svelte",
-		"tauri",
-		"tailwindcss"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/shinokada/tauri-svelte"
-	}
+    "svelte",
+    "tauri",
+    "tailwindcss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinokada/tauri-svelte"
+  }
 }
